@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<style>
+		body {
+			background-color: #fccde2;
+			padding: 10px;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			border: 2px solid #000000;
+		}
+		header {
+			display: flex;
+			align-items: center;
+			padding: 10px 20px;
+			background-color: #ff0000;
+			color: #fff;
+			border-radius: 15px;
+		}
+		header:hover {
+			color: #43b59e;
+			background-color: #ff0000;
+		}
+		header img {
+			height: 50px;
+			margin-right: 15px;
+			border-radius: 50%;
+		}
+		h1 {
+			margin: 0;
+			font-size: 2rem;
+		}
+		nav {
+            background-color: #333;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #8ac24a;
+		}
+		h2 {
+			text-align: center;
+		}
+		.video-container {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap; 
+			padding: 20px 0;
+		}
+		.video-box {
+			width: 23%;
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 15px;
+			border: 2px solid #6499fc;
+			background-color: #6499fc;
+			text-align: center;
+		}
+		.video-box video {
+			width: 80%; 
+			height: auto;
+			border-radius:10px; 
+		}
+		@media (max-width: 768px) {
+			.video-box {
+				width: 48%; 
+			}
+		}
+		@media (max-width: 480px) {
+			.video-box {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="https://servdharm.com/cdn/shop/articles/My_project_01d92039-5cf1-4649-b8d9-a2ab5d3c9353_1024x1024.jpg?v=1660806574" alt="Logo">
+		<h1>Kedarnath</h1>
+	</header>
+	<nav>
+		<a href="kedarnath.html">Home</a>
+		<a href="content.html">Content</a>
+		<a href="mapps.html">Map</a>
+		<a href="review.html">Reviews</a>
+		<a href="contactus.html">Contact Us</a>
+	</nav>
+	<h2>Here are some of the Beautiful videos of <strong>KEDARNATH</strong></h2>
+	<div class="video-container">
+		<div class="video-box">
+			<video controls>
+				<source src="v1.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="video-box">
+			<video controls>
+				<source src="v2.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="video-box">
+			<video controls>
+				<source src="v3.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="video-box">
+			<video controls>
+				<source src="v4.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+</body>
+</html>
